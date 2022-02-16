@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: floralwhite;
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 117, 226);
+    outline: none;
+    border: 4.4px rgb(59, 117, 226) solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgb(66, 132, 255);
+    border: 4.4px rgb(66, 132, 255) solid;
+    box-shadow: rgb(66, 132, 255) 20%;
+}
+.active {
+    filter: blur(999px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.popup.active2 {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.btn2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 24, 23);
+    outline: none;
+    border: 4.4px rgb(23, 24, 23) solid;
+    border-radius: 10px;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: flex-start;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 20px;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.btn2:hover,
+.btn2:active {
+    background-color: rgb(87, 87, 87);
+    border: 4.4px rgb(87, 87, 87) solid;
+    box-shadow: rgb(87, 87, 87) 20%;
+}
+
+.btn3 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 194, 47);
+    outline: none;
+    border: 4.4px rgb(47, 194, 47) solid;
+    border-radius: 10px;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: flex-start;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 20px;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.btn3:hover,
+.btn3:active {
+    color: black;
+    background-color: rgb(66, 255, 66);
+    border: 4.4px rgb(66, 255, 66) solid;
+    box-shadow: rgb(66, 255, 66) 20%;
+}
